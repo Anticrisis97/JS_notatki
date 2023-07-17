@@ -122,3 +122,97 @@ const magic2 = () => {
 //to samo co wyżej
 
 const magic3 = () => ({a: 42})
+
+// Control Flow
+
+
+
+
+
+
+
+
+
+// loops
+
+// const x = [1, 2, 3];
+// const y = [];
+
+// for (let i = 0; i < x.length; i++){
+//    y.push(x[i] *2);
+// }
+
+// console.log(y);
+
+// for.of
+// for (const item of x){
+//    y.push(item*2);
+//}
+
+// while jeżeli nie wiemy ile iteracji, for jeżeli wiemy
+// while (condition){
+
+// }
+// let index = 0;
+
+// while (index < 3){
+//    y.push(x[index] * 2);
+//    index++;
+// }
+
+// do {} while (condition)
+
+// exercises
+//napisz funkcje, która zwraca z tablicy największą wartość
+
+function max(collection){
+    let maxValue = collection[0];
+    for (const digit of collection){
+        if (digit > maxValue){
+            maxValue = digit
+        }
+    }
+    return maxValue;
+}
+
+
+//console.log(max([1, 2, 3, 4, 5, 2, 42]));
+
+// Napisz funkcje która zwraca nazwę dnia tygodnia, na podstawie liczby 1 - sunday, 7 - saturday
+
+// const getDayName = (dayIndex) => {
+//     switch (dayIndex) {
+//         case 1:
+//             return 'Sunday'
+//         case 2:
+//             return 'Monday'
+//         case 3:
+//             return 'Tuesday'
+//         case 4:
+//             return 'Wednesday'
+//         case 5:
+//             return 'Thursday'
+//         case 6:
+//             return 'Friday'
+//         case 7:
+//             return 'Saturday'
+//         default:
+//             throw new Error('Invalid index day');
+//     }
+// }
+
+// console.log(getDayName(2));
+
+// Policz średnią elementów z tablicy
+
+function calculateAvg(numbers) {
+    let sum = 0;
+
+    for (const number of numbers) {
+    sum += number;
+    }
+
+    return sum / numbers.length;
+}
+
+console.log(calculateAvg([1, 2, 3, 4, 5]));
