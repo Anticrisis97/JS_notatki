@@ -187,3 +187,4 @@ function countUniqueHobbies(items) {
     // sprawdź, czy dane hobby jeszcze nie jest w tablicy do dodawania hobby i go dodaj
     // zwróć długość tablicy z hobby
 
+const countUniqueHobbies = (data)
